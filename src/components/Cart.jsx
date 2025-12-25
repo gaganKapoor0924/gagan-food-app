@@ -7,7 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
-  const [activeCart, setActiveCart] = useState(true);
+  const [activeCart, setActiveCart] = useState(false);
   const navigate = useNavigate();
 
   const cartItems = useSelector((state) => state.cart.cart);
